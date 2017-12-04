@@ -21,10 +21,6 @@ namespace SeleniumNUnitParam
             Driver.Manage().Timeouts().ImplicitlyWait(pageloadwait);
             string title = Driver.Title;
             Assert.AreEqual("Homepage", title, "Page Title");
-            System.Threading.Thread.Sleep(3000);
-            Driver.Navigate().GoToUrl("http://Synverse%2ETest3:st%3A9872%40s@sorce-tfsbunker:8080/tfs/DefaultCollection/Beacon/Beacon%20Team/_build#definitionUri=&_a=completed");
-            Driver.Manage().Timeouts().ImplicitlyWait(pageloadwait);
-            string s = Driver.FindElement(By.XPath("(//*[contains(text(),'Engage Nightly_')])/preceding-sibling::div[1]")).GetCssValue("background-color");
             Driver.Close();
         }
 
