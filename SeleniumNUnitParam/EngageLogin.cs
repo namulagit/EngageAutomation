@@ -16,7 +16,7 @@ namespace SeleniumNUnitParam
         public void LoginCheck()
         {
             Driver.Navigate().GoToUrl("http://loaduser1:Vanadium2200@beacon-test/sorce/");
-            System.Threading.Thread.Sleep(5000);
+            System.Threading.Thread.Sleep(10000);
             TimeSpan pageloadwait = TimeSpan.FromSeconds(30.00);
             Driver.Manage().Timeouts().ImplicitlyWait(pageloadwait);
             string title = Driver.Title;
